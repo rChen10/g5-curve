@@ -142,10 +142,10 @@ static matrix generate_curve_coefs(matrix& a, int type){
 
 	else{	
 		matrix m = matrix();
-		std::vector<double> r1 = {-1, 3, -3, 1};
-		std::vector<double> r2 = {3, -6, 3, 0};
-		std::vector<double> r3 = {-3, 3, 0, 0};
-		std::vector<double> r4 = {1, 0, 0, 0};
+		point r1 = point(-1, 3, -3, 1);
+		point r2 = point(3, -6, 3, 0);
+		point r3 = point(-3, 3, 0, 0);
+		point r4 = point(1, 0, 0, 0);
 		m+=r1;m+=r2;m+=r3;m+=r4;
 		
 		//std::cout<<a;
